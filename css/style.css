@@ -125,6 +125,10 @@ body {
   margin-bottom: 8rem;
 }
 
+.mt-big {
+  margin-top: 8rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -152,6 +156,13 @@ body {
 }
 .btn--white::after {
   background-color: #FDFDFD;
+}
+.btn--green {
+  background-color: #55c57a;
+  color: #FDFDFD;
+}
+.btn--green::after {
+  background-color: #55c57a;
 }
 .btn::after {
   content: "";
@@ -340,6 +351,27 @@ body {
 }
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  text-align: center;
+  margin-bottom: 8rem;
+  color: #FDFDFD;
+}
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 300;
 }
 
 .row {
