@@ -1,3 +1,19 @@
+/* 
+0 - 600px:            Phone
+600px - 900px:        Tablet portrait
+900px - 1200px:       Tablet landscape
+[1200 - 1800px]   ====>>>>> is where out normal style applies      
+1800px + :            Big desktop
+*/
+/*
+$breakpoint argument choices:
+-> phone
+-> tab-port
+-> tab-land
+-> big-desktop
+
+1em = 16px
+*/
 *,
 *::before,
 *::after {
@@ -8,6 +24,21 @@
 
 html {
   font-size: 62.5%;
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -67,14 +98,14 @@ body {
 }
 .heading-primary--main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
   letter-spacing: 35px;
   animation: moveInLeft 0.7s;
 }
 .heading-primary--sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 17.4px;
   animation: moveInRight 0.7s;
