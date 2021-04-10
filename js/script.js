@@ -3,8 +3,8 @@ const menuList = document.querySelector('.navigation__list');
 
 menuCheckbox.addEventListener('click', (e) => {
     if (!e.target.checked) {
-        setTimeout(() => {
-            menuList.style.display = 'none';
-        }, 800);
+        menuList.style.visibility = 'hidden';
+    } else {
+        menuList.style.visibility = 'visible';
     }
 })
